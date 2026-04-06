@@ -1,6 +1,7 @@
 # Real-time-2D-Motion-Capture-System
 Real-time 2D Motion Capture System implemented on the Nexys Video Board. 
 
+```
 Real-time-2D-Motion-Capture-System/
 ├── Final Report - Group 9.pdf         # Final report PDF 
 ├── Custom IP Verilog/                 # List of Verilog files for the Custom IP 
@@ -15,3 +16,4 @@ Real-time-2D-Motion-Capture-System/
 │   ├── rebuild.tcl
 │   └── ...
 └── README.md
+```
