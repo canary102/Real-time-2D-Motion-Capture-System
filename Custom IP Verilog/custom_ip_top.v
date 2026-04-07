@@ -13,8 +13,7 @@ module custom_ip #
     parameter MAX_CIRCLES = 13,    // Maximum number of circles
     parameter MIN_HEIGHT = 10,
     parameter MAX_GAP = 12,
-    parameter MIN_WIDTH = 1,
-    parameter TOTAL_THRESHOLD = 90,
+    parameter MIN_WIDTH = 1
     // User parameters ends
     // Do not modify the parameters beyond this line
 
@@ -65,31 +64,7 @@ module custom_ip #
     output [C_S00_AXI_DATA_WIDTH-1 : 0] s00_axi_rdata,
     output [1 : 0] s00_axi_rresp,
     output  s00_axi_rvalid,
-    input  s00_axi_rready,
-    //Debug ports
-    output cbit,
-    output [X_BIT_SIZE-1:0] x_loc,
-    output [Y_BIT_SIZE-1:0] y_loc,
-    output [3:0] circ_coun,
-    output [15:0] pdata,
-    output mtch,
-    output rplc,
-    output [3:0] mtch_idx,
-    output [3:0] rplc_idx,
-    output r_high,
-    output g_high,
-    output b_high,
-    output [Y_BIT_SIZE-1:0] f_row2,
-    output [Y_BIT_SIZE-1:0] f_row5,
-    output [Y_BIT_SIZE-1:0] l_row2,
-    output [Y_BIT_SIZE-1:0] l_row5,
-    //Also add all AXI stream ports as an additional one (valid, ready, data)
-    output [C_S00_AXIS_TDATA_WIDTH-1:0] tdata,
-    output tvalid,
-    output cready,
-    output o_valid,
-    output i_valid
-    //Also add out_valid, in_valid
+    input  s00_axi_rready
 );
 
     assign tvalid = s00_axis_tvalid;
@@ -178,8 +153,7 @@ module custom_ip #
         .MAX_CIRCLES(MAX_CIRCLES),
         .MIN_HEIGHT(MIN_HEIGHT),
         .MAX_GAP(MAX_GAP),
-        .MIN_WIDTH(MIN_WIDTH),
-        .TOTAL_THRESHOLD(TOTAL_THRESHOLD)
+        .MIN_WIDTH(MIN_WIDTH)
     ) joint_detection (
         .clk(s00_axis_aclk),
         .aresetn(s00_axis_aresetn),
@@ -187,19 +161,7 @@ module custom_ip #
         .in_valid(in_valid),
         .out_valid(out_valid),
         .x_coords(x_coords),
-        .y_coords(y_coords),
-        .cbit(cbit),
-        .x_loc(x_loc),
-        .y_loc(y_loc),
-        .circ_coun(circ_coun),
-        .pdata(pdata),
-        .rplc(rplc),
-        .mtch(mtch),
-        .rplc_idx(rplc_idx),
-        .mtch_idx(mtch_idx),
-        .r_high(r_high),
-        .b_high(b_high),
-        .g_high(g_high)
+        .y_coords(y_coords)
 );
 
 // User logic ends
