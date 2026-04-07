@@ -8,8 +8,9 @@ module custom_ip #
     parameter X_BIT_SIZE = 11,    // Number of Bits Required
     parameter Y_SIZE = 720,
     parameter Y_BIT_SIZE = 10,
-    parameter THRESHOLD_R_B = 25, // Maximum for 5 bits is 31
+    parameter THRESHOLD_R = 25,   // Maximum for 5 bits is 31
     parameter THRESHOLD_G = 50,   // Maximum for 6 bits is 63
+    parameter THRESHOLD_R = 25,    // Maximum for 5 bits is 31
     parameter MAX_CIRCLES = 13,    // Maximum number of circles
     parameter MIN_HEIGHT = 10,
     parameter MAX_GAP = 12,
@@ -150,6 +151,9 @@ module custom_ip #
         .X_BIT_SIZE(X_BIT_SIZE),
         .Y_COORD(Y_SIZE),
         .Y_BIT_SIZE(Y_BIT_SIZE),
+        .THRESHOLD_R(THRESHOLD_R),
+        .THRESHOLD_G(THRESHOLD_G),
+        .THRESHOLD_B(THRESHOLD_B),
         .MAX_CIRCLES(MAX_CIRCLES),
         .MIN_HEIGHT(MIN_HEIGHT),
         .MAX_GAP(MAX_GAP),
