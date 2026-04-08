@@ -16,7 +16,7 @@ Video demonstration [Google Drive Link](https://drive.google.com/file/d/1Yzdu2Of
 
 ```
 Real-time-2D-Motion-Capture-System/
-├── Custom IP Verilog/                 # List of Verilog files for the Custom IP 
+├── Custom_IP_Verilog/                 # List of Verilog files for the Custom IP 
 │   ├── axi_slave_lite.v               # AXI interface
 │   ├── custom_ip_top.v                # Custom IP top module
 │   ├── joint_detect.v                 # Marker detection
@@ -25,11 +25,11 @@ Real-time-2D-Motion-Capture-System/
 │       ├── input.png
 │       ├── joints_to_img.py
 │       └── sim_id.sv 
-├── Microblaze C Code/                 # C code for Microblaze Processor 
+├── Microblaze_C_Code/                 # C code for Microblaze Processor 
 │   └── full_video_532.c               
-├── Vitis Classic 2024.1 Project/      # Vitis Classic 2024.1 Software Project File
+├── Vitis_Classic_2024.1_Project/      # Vitis Classic 2024.1 Software Project File
 │   └── Group9_SW.zip
-├── Vivado 2024.1 Project/             # Vivado 2024.1 Hardware Project Files (can rebuild the project using these files) 
+├── Vivado_2024.1_Project/             # Vivado 2024.1 Hardware Project Files (can rebuild the project using these files) 
 │   ├── IP_Repo/                       # IP Folder 
 │   ├── Nexys-Video-HW1/
 │   ├── marker_detector_ip/            # Custom IP source code folder
