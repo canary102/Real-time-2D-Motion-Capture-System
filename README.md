@@ -16,7 +16,6 @@ Video demonstration [Google Drive Link](https://drive.google.com/file/d/1Yzdu2Of
 
 ```
 Real-time-2D-Motion-Capture-System/
-├── Final Report - Group 9.pdf         # Final report PDF 
 ├── Custom IP Verilog/                 # List of Verilog files for the Custom IP 
 │   ├── axi_slave_lite.v               # AXI interface
 │   ├── custom_ip_top.v                # Custom IP top module
@@ -34,6 +33,8 @@ Real-time-2D-Motion-Capture-System/
 │   ├── IP_Repo/                       # IP Folder 
 │   ├── Nexys-Video-HW1/
 │   ├── marker_detector_ip/            # Custom IP source code folder
-│   └── Nexys-Video-HW.tcl             # .tcl file used to rebuild the project 
+│   └── Nexys-Video-HW.tcl             # .tcl file used to rebuild the project
+├── Final_Presentation.pdf             # Final presentation PDF 
+├── Final_Report_Group_9.pdf           # Final report PDF 
 └── README.md
 ```
