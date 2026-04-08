@@ -15,7 +15,7 @@ def convert_to_hex(image_path, output_hex):
             for x in range(1280):
                 r, g, b = pixels[x, y]
                 # Combine into a 24-bit single hex value
-                hex_val = f"{r:02x}{g:02x}{b:02x}"
+                hex_val = f"{r:02x}{b:02x}{g:02x}"
                 f.write(hex_val + "\n")
 
 if __name__ == "__main__":
